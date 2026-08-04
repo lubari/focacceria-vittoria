@@ -66,37 +66,70 @@ document.addEventListener('DOMContentLoaded', () => {
         if (bottomOrderBtn) bottomOrderBtn.href = finalUrl;
     }
 
-    const addButtons = document.querySelectorAll('.btn-outline');
-    addButtons.forEach(button => {
-        button.addEventListener('click', (e) => {
-            if (e.target.classList.contains('btn-order-bottom')) return;
+    // Helper to get cart title
+    function getCartTitle(card) {
+        const baseTitle = card.querySelector('.card-title').innerText;
+        const sizeSelector = card.querySelector('.size-selector');
+        const sizeLabel = sizeSelector ? (sizeSelector.value === 'entera' ? 'Entera' : 'Mitad') : '';
+        return sizeLabel ? `${baseTitle} (${sizeLabel})` : baseTitle;
+    }
 
+    // Size Selection Logic
+    const sizeSelectors = document.querySelectorAll('.size-selector');
+    sizeSelectors.forEach(select => {
+        select.addEventListener('change', (e) => {
+            const card = e.target.closest('.card-content');
+            if (!card) return;
+            
+            const selectedOption = e.target.options[e.target.selectedIndex];
+            
+            // Update price
+            const price = selectedOption.getAttribute('data-price');
+            const priceElement = card.querySelector('.card-price');
+            priceElement.innerText = `$${parseInt(price).toLocaleString('es-AR')}`;
+            
+            // Update quantity display
+            const title = getCartTitle(card);
+            const qtyDisplay = card.querySelector('.qty-display');
+            if (qtyDisplay) {
+                qtyDisplay.innerText = cart[title] ? cart[title].quantity : 0;
+            }
+        });
+    });
+
+    // Quantity buttons logic
+    const qtyButtons = document.querySelectorAll('.qty-btn');
+    qtyButtons.forEach(button => {
+        button.addEventListener('click', (e) => {
             const card = e.target.closest('.card-content');
             if (!card) return;
 
-            const title = card.querySelector('.card-title').innerText;
+            const title = getCartTitle(card);
             const priceStr = card.querySelector('.card-price').innerText;
             const priceNum = parseInt(priceStr.replace(/[^0-9]/g, ''), 10) || 0;
-
+            
             if (!cart[title]) {
                 cart[title] = { quantity: 0, price: priceNum };
             }
-            cart[title].quantity++;
 
-            // Visual feedback on button
-            e.target.innerText = `Agregar (${cart[title].quantity})`;
-            e.target.style.backgroundColor = 'var(--color-rojo)';
-            e.target.style.color = 'var(--color-white)';
-
-            setTimeout(() => {
-                e.target.style.backgroundColor = 'transparent';
-                e.target.style.color = 'var(--color-rojo)';
-            }, 300);
+            if (e.target.classList.contains('plus')) {
+                cart[title].quantity++;
+            } else if (e.target.classList.contains('minus')) {
+                if (cart[title].quantity > 0) {
+                    cart[title].quantity--;
+                }
+            }
+            
+            // Update display
+            const qtyDisplay = card.querySelector('.qty-display');
+            if (qtyDisplay) {
+                qtyDisplay.innerText = cart[title].quantity;
+            }
 
             updateWhatsappLink();
 
-            // Visual feedback on tooltip
-            if (tooltip) {
+            // Visual feedback on tooltip if added
+            if (e.target.classList.contains('plus') && tooltip) {
                 tooltip.innerText = "¡Agregado!";
                 setTimeout(() => {
                     tooltip.innerText = "¡Hacé tu pedido!";
