@@ -4,12 +4,12 @@
     --color-rojo: #a60c16;
     --color-marron: #2b110d;
     --color-white: #ffffff;
-    
+
     /* Typography */
     --font-logo: 'Pacifico', cursive;
     --font-heading: 'Tenor Sans', sans-serif;
     --font-body: 'Poppins', sans-serif;
-    
+
     /* Transitions & Shadows */
     --transition-fast: 0.3s ease;
     --transition-slow: 0.5s ease;
@@ -49,16 +49,29 @@ body {
     transition: var(--transition-fast);
 }
 
+.logo-wrapper {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    transition: transform var(--transition-fast);
+}
+
+.logo-wrapper:hover {
+    transform: scale(1.05);
+}
+
 .logo {
     font-family: var(--font-logo);
     font-size: 2.5rem;
     color: var(--color-rojo);
-    cursor: pointer;
-    transition: transform var(--transition-fast);
 }
 
-.logo:hover {
-    transform: scale(1.05);
+.logo-sub {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    color: #366560;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 .nav a {
@@ -285,8 +298,14 @@ section {
 .card-desc {
     font-size: 0.9rem;
     color: rgba(43, 17, 13, 0.7);
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.5rem;
     flex-grow: 1;
+}
+
+.card-weight {
+    font-size: 0.8rem;
+    color: rgba(43, 17, 13, 0.4);
+    margin-bottom: 1.5rem;
 }
 
 .card-price {
@@ -434,15 +453,15 @@ section {
         justify-content: center;
         text-align: center;
     }
-    
+
     .hero-content {
         margin-bottom: 3rem;
     }
-    
+
     .hero h1 {
         font-size: 3rem;
     }
-    
+
     .hero-img {
         width: 100%;
         margin-left: 0;
@@ -458,16 +477,16 @@ section {
     .info-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .header {
         flex-direction: column;
         padding: 1rem;
     }
-    
+
     .nav {
         margin-top: 1rem;
     }
-    
+
     .nav a {
         margin: 0 1rem;
     }
@@ -477,12 +496,12 @@ section {
     .hero h1 {
         font-size: 2.5rem;
     }
-    
+
     .nav a {
         font-size: 0.8rem;
         margin: 0 0.5rem;
     }
-    
+
     .section-title {
         font-size: 2rem;
     }
@@ -526,8 +545,15 @@ section {
 }
 
 @keyframes bounce {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-8px); }
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
 }
 
 .whatsapp-btn {
