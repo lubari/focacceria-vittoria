@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>victoria | Focaccería Artesanal</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600&family=Tenor+Sans&display=swap"
+        rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- 1. Encabezado y Hero Section -->
+    <header class="header">
+        <div class="logo">vittoria</div>
+        <nav class="nav">
+            <a href="#proceso">Proceso</a>
+            <a href="#menu">Menú</a>
+            <a href="#info">Envíos</a>
+            <a href="#faq">FAQ</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <h1>El sabor auténtico de la focaccia</h1>
+            <p>Hechas a mano con masa madre y mucho amor.</p>
+            <a href="#menu" class="btn-primary">Ver Menú</a>
+        </div>
+        <img src="images/pexels-idilcelikler-34581347.jpg" alt="Focaccia Artesanal" class="hero-img">
+    </section>
+
+    <!-- 2. Proceso Artesanal (3 pasos) -->
+    <section class="proceso" id="proceso">
+        <h2 class="section-title">NUESTRO PROCESO</h2>
+        <div class="steps-container">
+            <div class="step">
+                <div class="step-number">1</div>
+                <h3>Amasado</h3>
+                <p>Mezclamos harinas seleccionadas y agua purificada con paciencia y dedicación.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <h3>Leudado Lento</h3>
+                <p>48 horas de fermentación en frío para lograr una textura ligera y alveolada.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <h3>Horneado</h3>
+                <p>Aceite de oliva extra virgen y calor intenso para un dorado crujiente perfecto.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Tarjetas de Menú -->
+    <section class="menu" id="menu">
+        <h2 class="section-title">NUESTRAS VARIEDADES</h2>
+        <div class="menu-grid">
+            <!-- Tarjeta 1 -->
+            <div class="menu-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnsCDmQlLW1GZFdqac-eF-r-Mw9JXgqK05FmGnnsmpuz1kdQI-CGP3iX8&s=10"
+                    alt="Focaccia Clásica Romero" class="card-img">
+                <div class="card-content">
+                    <h3 class="card-title">CLÁSICA ROMERO</h3>
+                    <p class="card-desc">Aceite de oliva extra virgen, sal marina y romero fresco.</p>
+                    <span class="card-price">$4.500</span>
+                    <button class="btn-outline">Agregar</button>
+                </div>
+            </div>
+            <!-- Tarjeta 2 -->
+            <div class="menu-card">
+                <img src="https://iphonegr.mural.com.mx/libre/online07/imagetransformer2/imagetransformer.aspx?imagencompleta=1&maxwidth=960&img=https://img.gruporeforma.com/imagenes/imgartenr/7/156/6155334.jpg"
+                    alt="Focaccia Tomates Confitados" class="card-img">
+                <div class="card-content">
+                    <h3 class="card-title">TOMATES CONFITADOS</h3>
+                    <p class="card-desc">Tomates cherry confitados, ajo asado y albahaca fresca.</p>
+                    <span class="card-price">$5.200</span>
+                    <button class="btn-outline">Agregar</button>
+                </div>
+            </div>
+            <!-- Tarjeta 3 -->
+            <div class="menu-card">
+                <img src="https://cuk-it.com/wp-content/uploads/2023/06/focaccia-cebollamorada-stories-01-e1635019424186.jpg"
+                    alt="Focaccia Cebolla Morada" class="card-img">
+                <div class="card-content">
+                    <h3 class="card-title">CEBOLLA MORADA</h3>
+                    <p class="card-desc">Cebolla morada caramelizada y un toque de orégano salvaje.</p>
+                    <span class="card-price">$4.800</span>
+                    <button class="btn-outline">Agregar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Zona de Retiro y Envíos -->
+    <section class="info" id="info">
+        <div class="info-container">
+            <h2 class="section-title">TAKE AWAY Y ENVÍOS</h2>
+            <div class="info-grid">
+                <div class="info-box">
+                    <h3>Retiro por Local</h3>
+                    <p>Av. Siempre Viva 742<br>De Martes a Domingos<br>10:00 a 20:00 hs.</p>
+                </div>
+                <div class="info-box">
+                    <h3>Envíos a Domicilio</h3>
+                    <p>Llegamos a toda la zona céntrica. Los pedidos se toman con 24hs de anticipación para garantizar
+                        frescura.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Preguntas Frecuentes (FAQ) -->
+    <section class="faq" id="faq">
+        <h2 class="section-title">PREGUNTAS FRECUENTES</h2>
+        <div class="accordion">
+            <div class="accordion-item">
+                <button class="accordion-header">¿Cómo debo conservar la focaccia?</button>
+                <div class="accordion-content">
+                    <p>Puedes conservarla a temperatura ambiente envuelta en papel o tela por 2 días. Para mayor
+                        duración, guárdala en el refrigerador en un recipiente hermético o congélala hasta por 1 mes.
+                    </p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-header">¿Cómo la regenero al horno?</button>
+                <div class="accordion-content">
+                    <p>Precalienta tu horno a 180°C. Si está a temperatura ambiente, caliéntala durante 3-5 minutos. Si
+                        está congelada, hornea directamente por unos 8-10 minutos hasta que recupere su textura
+                        crujiente.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-header">¿Qué medios de pago aceptan?</button>
+                <div class="accordion-content">
+                    <p>Aceptamos efectivo, transferencias bancarias, Mercado Pago y todas las tarjetas de crédito y
+                        débito.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 victoria focaccería. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- JS -->
+    <script src="./main.js"></script>
+
+    <!-- Botón de WhatsApp -->
+    <div class="whatsapp-container">
+        <div class="whatsapp-tooltip">¡Hacé tu pedido!</div>
+        <a href="https://wa.me/5491158427814" class="whatsapp-btn" target="_blank" rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor">
+                <path
+                    d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
+            </svg>
+        </a>
+    </div>
+</body>
+
+</html>
