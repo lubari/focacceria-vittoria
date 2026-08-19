@@ -23,6 +23,7 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    scroll-padding-top: 90px;
 }
 
 body {
@@ -529,13 +530,17 @@ select.size-selector:hover {
 
 /* --- RESPONSIVE --- */
 @media (max-width: 900px) {
+    * {
+        scroll-padding-top: 150px;
+    }
+
     section {
         padding: 4rem 5%;
     }
 
     .hero {
         height: auto;
-        padding-top: 120px;
+        padding-top: 170px;
         padding-bottom: 4rem;
         flex-direction: column;
         justify-content: center;
