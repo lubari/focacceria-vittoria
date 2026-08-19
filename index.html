@@ -23,8 +23,8 @@
             <span class="logo-sub">focacceria</span>
         </a>
         <nav class="nav">
-            <a href="#proceso">Proceso</a>
             <a href="#menu">Menú</a>
+            <a href="#proceso">Proceso</a>
             <a href="#info">Envíos</a>
             <a href="#faq">FAQ</a>
         </nav>
@@ -39,7 +39,83 @@
         <img src="images/pexels-idilcelikler-34581347.jpg" alt="Focaccia Artesanal" class="hero-img">
     </section>
 
-    <!-- 2. Proceso Artesanal (3 pasos) -->
+    <!-- 2. Tarjetas de Menú -->
+    <section class="menu" id="menu">
+        <h2 class="section-title">NUESTRAS VARIEDADES</h2>
+        <div class="menu-grid">
+            <!-- Tarjeta 1 -->
+            <div class="menu-card">
+                <img src="images/pexels-nataliaolivera-30666811.jpg" alt="Focaccia Clásica Romero" class="card-img">
+                <div class="card-content">
+                    <h3 class="card-title">CLÁSICA ROMERO</h3>
+                    <p class="card-desc">Aceite de oliva extra virgen, sal marina y romero fresco.</p>
+                    <select class="size-selector">
+                        <option value="entera" data-price="12500">Entera (30x40 cm)</option>
+                        <option value="mitad" data-price="7000">Mitad (20x30 cm)</option>
+                    </select>
+                    <span class="card-price">$12.500</span>
+                    <div class="qty-controller-wrapper">
+                        <button class="btn-add-to-cart">Agregar</button>
+                        <div class="qty-controller hidden">
+                            <button class="qty-btn minus">-</button>
+                            <span class="qty-display">0</span>
+                            <button class="qty-btn plus">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Tarjeta 2 -->
+            <div class="menu-card">
+                <img src="images/pexels-nataliaolivera-30666816.jpg" alt="Focaccia Tomates Confitados" class="card-img">
+                <div class="card-content">
+                    <h3 class="card-title">TOMATES CONFITADOS</h3>
+                    <p class="card-desc">Tomates cherry confitados, ajo asado y romero.</p>
+                    <select class="size-selector">
+                        <option value="entera" data-price="15000">Entera (30x40 cm)</option>
+                        <option value="mitad" data-price="8500">Mitad (20x30 cm)</option>
+                    </select>
+                    <span class="card-price">$15.000</span>
+                    <div class="qty-controller-wrapper">
+                        <button class="btn-add-to-cart">Agregar</button>
+                        <div class="qty-controller hidden">
+                            <button class="qty-btn minus">-</button>
+                            <span class="qty-display">0</span>
+                            <button class="qty-btn plus">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Tarjeta 3 -->
+            <div class="menu-card">
+                <img src="https://cuk-it.com/wp-content/uploads/2023/06/focaccia-cebollamorada-stories-01-e1635019424186.jpg"
+                    alt="Focaccia Cebolla Morada" class="card-img">
+                <div class="card-content">
+                    <h3 class="card-title">CEBOLLA MORADA</h3>
+                    <p class="card-desc">Cebolla morada caramelizada y un toque de orégano salvaje.</p>
+                    <select class="size-selector">
+                        <option value="entera" data-price="15000">Entera (30x40 cm)</option>
+                        <option value="mitad" data-price="8500">Mitad (20x30 cm)</option>
+                    </select>
+                    <span class="card-price">$15.000</span>
+                    <div class="qty-controller-wrapper">
+                        <button class="btn-add-to-cart">Agregar</button>
+                        <div class="qty-controller hidden">
+                            <button class="qty-btn minus">-</button>
+                            <span class="qty-display">0</span>
+                            <button class="qty-btn plus">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 4rem;">
+            <a href="https://wa.me/5491158427814?text=Hola!%20quiero%20realizar%20un%20pedido."
+                class="btn-primary btn-order-bottom" style="display: inline-block; text-decoration: none;"
+                target="_blank" rel="noopener noreferrer">Hacer Pedido por WhatsApp</a>
+        </div>
+    </section>
+
+    <!-- 3. Proceso Artesanal (3 pasos) -->
     <section class="proceso" id="proceso">
         <h2 class="section-title">NUESTRO PROCESO</h2>
         <div class="steps-container">
@@ -61,86 +137,25 @@
         </div>
     </section>
 
-    <!-- 3. Tarjetas de Menú -->
-    <section class="menu" id="menu">
-        <h2 class="section-title">NUESTRAS VARIEDADES</h2>
-        <div class="menu-grid">
-            <!-- Tarjeta 1 -->
-            <div class="menu-card">
-                <img src="images/pexels-nataliaolivera-30666811.jpg" alt="Focaccia Clásica Romero" class="card-img">
-                <div class="card-content">
-                    <h3 class="card-title">CLÁSICA ROMERO</h3>
-                    <p class="card-desc">Aceite de oliva extra virgen, sal marina y romero fresco.</p>
-                    <select class="size-selector">
-                        <option value="entera" data-price="12500">Entera (30x40 cm)</option>
-                        <option value="mitad" data-price="7000">Mitad (20x30 cm)</option>
-                    </select>
-                    <span class="card-price">$12.500</span>
-                    <div class="qty-controller">
-                        <button class="qty-btn minus">-</button>
-                        <span class="qty-display">0</span>
-                        <button class="qty-btn plus">+</button>
-                    </div>
-                </div>
-            </div>
-            <!-- Tarjeta 2 -->
-            <div class="menu-card">
-                <img src="images/pexels-nataliaolivera-30666816.jpg" alt="Focaccia Tomates Confitados" class="card-img">
-                <div class="card-content">
-                    <h3 class="card-title">TOMATES CONFITADOS</h3>
-                    <p class="card-desc">Tomates cherry confitados, ajo asado y romero.</p>
-                    <select class="size-selector">
-                        <option value="entera" data-price="15000">Entera (30x40 cm)</option>
-                        <option value="mitad" data-price="8500">Mitad (20x30 cm)</option>
-                    </select>
-                    <span class="card-price">$15.000</span>
-                    <div class="qty-controller">
-                        <button class="qty-btn minus">-</button>
-                        <span class="qty-display">0</span>
-                        <button class="qty-btn plus">+</button>
-                    </div>
-                </div>
-            </div>
-            <!-- Tarjeta 3 -->
-            <div class="menu-card">
-                <img src="https://cuk-it.com/wp-content/uploads/2023/06/focaccia-cebollamorada-stories-01-e1635019424186.jpg"
-                    alt="Focaccia Cebolla Morada" class="card-img">
-                <div class="card-content">
-                    <h3 class="card-title">CEBOLLA MORADA</h3>
-                    <p class="card-desc">Cebolla morada caramelizada y un toque de orégano salvaje.</p>
-                    <select class="size-selector">
-                        <option value="entera" data-price="15000">Entera (30x40 cm)</option>
-                        <option value="mitad" data-price="8500">Mitad (20x30 cm)</option>
-                    </select>
-                    <span class="card-price">$15.000</span>
-                    <div class="qty-controller">
-                        <button class="qty-btn minus">-</button>
-                        <span class="qty-display">0</span>
-                        <button class="qty-btn plus">+</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div style="text-align: center; margin-top: 4rem;">
-            <a href="https://wa.me/5491158427814?text=Hola!%20quiero%20realizar%20un%20pedido."
-                class="btn-primary btn-order-bottom" style="display: inline-block; text-decoration: none;"
-                target="_blank" rel="noopener noreferrer">Hacer Pedido por WhatsApp</a>
-        </div>
-    </section>
-
     <!-- 4. Zona de Retiro y Envíos -->
     <section class="info" id="info">
         <div class="info-container">
             <h2 class="section-title">TAKE AWAY Y ENVÍOS</h2>
             <div class="info-grid">
                 <div class="info-box">
-                    <h3>Retiro por Local</h3>
-                    <p>Av. Siempre Viva 742<br>De Martes a Domingos<br>10:00 a 20:00 hs.</p>
+                    <h3>Punto de Retiro</h3>
+                    <p>📍 Recoleta, CABA</p>
+                    <p class="info-schedule"><strong>Horarios:</strong></p>
+                    <ul class="info-list">
+                        <li>Martes a Viernes: 10:00 a 19:00 hs</li>
+                        <li>Sábados: 11:00 a 14:00 hs</li>
+                    </ul>
                 </div>
                 <div class="info-box">
                     <h3>Envíos a Domicilio</h3>
-                    <p>Llegamos a toda la zona céntrica. Los pedidos se toman con 24hs de anticipación para garantizar
-                        frescura.</p>
+                    <p>🛵 Cobertura en zonas seleccionadas de CABA.</p>
+                    <p class="info-note">Escribinos para verificar si llegamos a tu barrio y consultar el costo de
+                        envío.</p>
                 </div>
             </div>
         </div>
@@ -169,7 +184,7 @@
             <div class="accordion-item">
                 <button class="accordion-header">¿Qué medios de pago aceptan?</button>
                 <div class="accordion-content">
-                    <p>Aceptamos efectivo, transferencias bancarias, Mercado Pago y débito.</p>
+                    <p>Aceptamos efectivo, transferencias bancarias y Mercado Pago.</p>
                 </div>
             </div>
         </div>
@@ -179,11 +194,41 @@
         <p>&copy; 2026 vittoria focaccería. Todos los derechos reservados.</p>
     </footer>
 
+    <!-- Cart Modal -->
+    <div class="cart-modal" id="cart-modal">
+        <div class="cart-modal-overlay" id="cart-modal-overlay"></div>
+        <div class="cart-modal-content">
+            <button class="cart-modal-close" id="cart-modal-close" aria-label="Cerrar">&times;</button>
+            <h3>Tu Pedido</h3>
+            <div class="cart-modal-items" id="cart-modal-items">
+                <!-- Dynamically populated via JS -->
+            </div>
+            <div class="cart-modal-footer">
+                <div class="cart-modal-total">
+                    <span>Total:</span>
+                    <span id="cart-modal-total-price">$0</span>
+                </div>
+                <p class="cart-modal-note">El envío o punto de retiro se coordinará por WhatsApp.</p>
+                <a href="#" class="btn-primary cart-modal-checkout-btn" id="cart-modal-checkout" target="_blank"
+                    rel="noopener noreferrer">
+                    Pedir por WhatsApp
+                </a>
+            </div>
+        </div>
+    </div>
+
     <!-- JS -->
     <script src="./main.js"></script>
 
-    <!-- Botón de WhatsApp -->
+    <!-- Botón de WhatsApp y Carrito -->
     <div class="whatsapp-container">
+        <a href="#menu" class="cart-floating-btn" id="cart-floating" aria-label="Ver carrito">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" fill="currentColor">
+                <path
+                    d="M0 24C0 10.7 10.7 0 24 0L69.5 0c22 0 41.5 12.8 50.6 32l382 0c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3l-288.5 0 5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5L488 336c13.3 0 24 10.7 24 24s-10.7 24-24 24l-308.3 0c-34.6 0-64.3-24.6-70.7-58.5L52.8 54.7c-2.2-11.3-12.1-19.5-23.6-19.5L24 35.2C10.7 35.2 0 24.5 0 11.2L0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z" />
+            </svg>
+            <span class="cart-badge" id="cart-badge-count">0</span>
+        </a>
         <div class="whatsapp-tooltip">¡Hacé tu pedido!</div>
         <a href="https://wa.me/5491158427814?text=Hola!%20quiero%20realizar%20un%20pedido." class="whatsapp-btn"
             target="_blank" rel="noopener noreferrer">
